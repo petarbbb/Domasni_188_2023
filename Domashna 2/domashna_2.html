@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style_domashna.css">
+   <title>Квиз по Java</title>
+</head>
+<body>
+   <h1 id="start">Квиз по Java</h1>
+   <p class="intro">Одговори на следните прашања за да го провериш своето знаење по Java. <br><br>
+   Секое прашање има 4 понудени одговори од кои само едно е точно.</p>
+   <img id="JavaLogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png" alt="Java Logo">
+   <form action="" method="post">
+      <div class="question">
+         1. Кој од дадените имиња е точен за фајл напишан во Java? <br>
+         <div class="answers">
+            <label><input type="radio" name="Q1">Java.exe</label>
+            <label><input type="radio" name="Q1">primer_123.java</label>
+            <label><input type="radio" name="Q1">ime.JVM</label>
+            <label><input type="radio" name="Q1">java.program</label>
+         </div>
+      </div>
+      <div class="question">
+         2. Што испечатува на екран следниот код? <br>
+         <pre>public class EdnostavenPrimer
+{
+   public static void main(String[] args)
+   {
+      System.out.println(“Prva Java programa");
+      //Hello World
+   }
+}</pre>
+         <div class="answers">
+            <label><input type="radio" name="Q2">EdnostavenPrimer</label>
+            <label><input type="radio" name="Q2">Hello World</label>
+            <label><input type="radio" name="Q2">Prva Java programa</label>
+            <label><input type="radio" name="Q2">String[] args</label>
+         </div>
+      </div>
+      <div class="question">
+         3. Која програма го интерпретира Java бајткодот добиен после компајлирање? <br>
+         <div class="answers">
+            <label><input type="radio" name="Q3">Java Virtual Machine (JVM)</label>
+            <label><input type="radio" name="Q3">Visual Studio Code</label>
+            <label><input type="radio" name="Q3">Секој текст едитор (пр. Notepad)</label>
+            <label><input type="radio" name="Q3">Command Prompt</label>
+         </div>
+      </div>
+      <div class="question">
+         4. Кој од наведените не е <strong>основен</strong> податочен тип во Java? <br>
+         <div class="answers">
+            <label><input type="radio" name="Q4">long</label>
+            <label><input type="radio" name="Q4">string</label>
+            <label><input type="radio" name="Q4">float</label>
+            <label><input type="radio" name="Q4">char</label>
+         </div>
+      </div>
+      <div class="question">
+         5. Како се дефинира променлива која може да ја пристапат <strong>само</strong> 
+         методи од истата класа во која е дефинирана? <br>
+         <div class="answers">
+            <label><input type="radio" name="Q5">boolean a;</label>
+            <label><input type="radio" name="Q5">protected static double volume;</label>
+            <label><input type="radio" name="Q5">private string name;</label>
+            <label><input type="radio" name="Q5">public final int max;</label>
+         </div>
+      </div>
+      <div>
+         <input class="button" type="submit" value="Испрати">
+         <a class="button" href="#start">Врати се назад на почетокот.</a>
+      </div>
+   </form>
+</body>
+</html>
