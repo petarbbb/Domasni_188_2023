@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <title>Seville</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+         <div class="navbar-brand">
+            <img src="./images/Escudo_de_Sevilla_(Sevilla).svg" alt="Coat of Arms" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <img src="./images/Flag_of_Sevilla,_Spain.svg" alt="Flag" width="50" height="50" class="d-inline-block align-text-top">
+         </div>
+         
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+               <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a>
+               </li>
+            </ul>
+            <a class="btn btn-outline-light" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="main">
+      <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+         <div class="welcome-box text-center p-4 mt-5">
+            <h1 class="display-4 mb-3">Welcome to Seville</h1>
+            <p class="lead mb-3">Visit these beautiful places!</p>
+            <ul class="list-unstyled">
+               <li><a class="btn btn-secondary mb-2" href="gallery.html">Plaza de España</a></li>
+               <li><a class="btn btn-secondary mb-2" href="gallery.html">Cathedral of Saint Mary of the See</a></li>
+               <li><a class="btn btn-secondary" href="gallery.html">Torre del Oro</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <footer class="bg-dark text-light py-4">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 mb-3">
+               <h5>About Seville</h5>
+               <p class="mb-0">Discover the beauty and culture of Seville, Spain's stunning Andalusian capital.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+               <h5>Quick Links</h5>
+               <ul class="list-unstyled">
+                  <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                  <li><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+                  <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                  <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a></li>
+               </ul>
+            </div>
+            <div class="col-md-4">
+               <h5>Contact Info</h5>
+               <ul class="list-unstyled">
+                  <li>Email: petarbozinovski555@gmail.com</li>
+               </ul>
+            </div>
+         </div>
+         <hr class="my-4">
+         <div class="row align-items-center">
+            <div class="col-md-6">
+               <p class="mb-0">&copy; 2025 Petar Bozhinovski. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+               <a href="#" class="text-light me-3"><i>Privacy Policy</i></a>
+               <a href="#" class="text-light"><i>Terms of Service</i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- "modal" za feedback -->
+   <div class="modal fade" id="feedbackModal" tabindex="-1">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Feedback</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="mb-3">
+                     <label for="feedbackName" class="form-label">Name</label>
+                     <input type="text" class="form-control" id="feedbackName">
+                  </div>
+                  <div class="mb-3">
+                     <label for="feedbackEmail" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="feedbackEmail">
+                  </div>
+                  <div class="mb-3">
+                  <label class="form-label">How was your experience?</label>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="bad" value="bad">
+                     <label class="form-check-label" for="bad">Bad</label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="neutral" value="neutral">
+                     <label class="form-check-label" for="neutral">Neutral</label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="good" value="good">
+                     <label class="form-check-label" for="good">Good</label>
+                  </div>
+               </div>
+                  <div class="mb-3">
+                     <label for="feedbackMessage" class="form-label">Message</label>
+                     <textarea class="form-control" id="feedbackMessage" rows="4"></textarea>
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="handleFeedback()">Submit Feedback</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- "modal" shto izleguva koga kje se klikne na login -->
+   <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Log In</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="mb-3">
+                     <label for="email" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="loginEmail">
+                  </div>
+                  <div class="mb-3">
+                     <label for="password" class="form-label">Password</label>
+                     <input type="password" class="form-control" id="loginPassword">
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="handleLogin()">Login</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="login.js"></script>
+</body>
+</html>

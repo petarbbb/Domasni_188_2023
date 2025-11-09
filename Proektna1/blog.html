@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <title>Blog - Seville</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+         <div class="navbar-brand">
+            <img src="./images/Escudo_de_Sevilla_(Sevilla).svg" alt="Coat of Arms" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <img src="./images/Flag_of_Sevilla,_Spain.svg" alt="Flag" width="50" height="50" class="d-inline-block align-text-top">
+         </div>
+         
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="blog.html">Blog</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a>
+               </li>
+            </ul>
+            <a class="btn btn-outline-light" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container" style="margin-top: 100px;">
+      <h1 class="text-center mb-5">Seville Blog</h1>
+      
+      <!-- Blog Post 1 -->
+      <div class="card mb-4">
+         <div class="card-body">
+            <h2 class="card-title">Exploring the Alcázar of Seville</h2>
+            <p class="text-muted">Posted on January 15, 2024</p>
+            <p class="card-text">The Royal Alcázar of Seville is one of the most stunning examples of Mudéjar architecture in Spain. Originally developed by Moorish Muslim kings, this palace complex features intricate tilework, beautiful gardens, and breathtaking courtyards...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+         </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="card mb-4">
+         <div class="card-body">
+            <h2 class="card-title">The Magic of Flamenco in Triana</h2>
+            <p class="text-muted">Posted on January 10, 2024</p>
+            <p class="card-text">Triana, the flamenco neighborhood across the Guadalquivir River, is where you'll find the soul of Seville. From traditional tablaos to spontaneous street performances, the passion of flamenco comes alive in every corner...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+         </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="card mb-4">
+         <div class="card-body">
+            <h2 class="card-title">Seville's Spring Fair: Feria de Abril</h2>
+            <p class="text-muted">Posted on January 5, 2024</p>
+            <p class="card-text">Every spring, Seville transforms during the Feria de Abril. For one week, the city celebrates with traditional dresses, horse parades, casetas (private tents), and non-stop dancing sevillanas. It's an unforgettable experience...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+         </div>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div class="card mb-4">
+         <div class="card-body">
+            <h2 class="card-title">A Food Lover's Guide to Tapas in Seville</h2>
+            <p class="text-muted">Posted on December 28, 2023</p>
+            <p class="card-text">From traditional bars in Santa Cruz to modern tapas restaurants in El Arenal, Seville offers an incredible culinary journey. Don't miss the salmorejo, espinacas con garbanzos, and of course, the famous Iberian ham...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+         </div>
+      </div>
+   </div>
+
+   <footer class="bg-dark text-light py-4">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 mb-3">
+               <h5>About Seville</h5>
+               <p class="mb-0">Discover the beauty and culture of Seville, Spain's stunning Andalusian capital.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+               <h5>Quick Links</h5>
+               <ul class="list-unstyled">
+                  <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                  <li><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+                  <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                  <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a></li>
+               </ul>
+            </div>
+            <div class="col-md-4">
+               <h5>Contact Info</h5>
+               <ul class="list-unstyled">
+                  <li>Email: petarbozinovski555@gmail.com</li>
+               </ul>
+            </div>
+         </div>
+         <hr class="my-4">
+         <div class="row align-items-center">
+            <div class="col-md-6">
+               <p class="mb-0">&copy; 2025 Petar Bozhinovski. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+               <a href="#" class="text-light me-3"><i>Privacy Policy</i></a>
+               <a href="#" class="text-light"><i>Terms of Service</i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- "modal" za feedback -->
+   <div class="modal fade" id="feedbackModal" tabindex="-1">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Feedback</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="mb-3">
+                     <label for="feedbackName" class="form-label">Name</label>
+                     <input type="text" class="form-control" id="feedbackName">
+                  </div>
+                  <div class="mb-3">
+                     <label for="feedbackEmail" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="feedbackEmail">
+                  </div>
+                  <div class="mb-3">
+                  <label class="form-label">How was your experience?</label>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="bad" value="bad">
+                     <label class="form-check-label" for="bad">Bad</label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="neutral" value="neutral">
+                     <label class="form-check-label" for="neutral">Neutral</label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="experience" id="good" value="good">
+                     <label class="form-check-label" for="good">Good</label>
+                  </div>
+               </div>
+                  <div class="mb-3">
+                     <label for="feedbackMessage" class="form-label">Message</label>
+                     <textarea class="form-control" id="feedbackMessage" rows="4"></textarea>
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="handleFeedback()">Submit Feedback</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- "modal" shto izleguva koga kje se klikne na login -->
+   <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Log In</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               <form>
+                  <div class="mb-3">
+                     <label for="email" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="loginEmail">
+                  </div>
+                  <div class="mb-3">
+                     <label for="password" class="form-label">Password</label>
+                     <input type="password" class="form-control" id="loginPassword">
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="handleLogin()">Login</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="login.js"></script>
+</body>
+</html>
