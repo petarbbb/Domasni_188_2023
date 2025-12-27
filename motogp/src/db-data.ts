@@ -1,7 +1,4 @@
-
-
 export const DRIVERS: any = [
-
     {
         id: 1,
         name: "Peco",
@@ -34,6 +31,4 @@ export const DRIVERS: any = [
         category: 'ASD',
         points: 10
     },
-    
-
 ];

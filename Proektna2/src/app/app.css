@@ -1,0 +1,144 @@
+.main {
+  margin: auto;
+  text-align: center;
+  width: 50rem;
+  font-family: Arial, sans-serif;
+}
+
+.options {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+}
+
+#TaskText {
+  width: 30rem;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.priority-options {
+  margin: 15px 0;
+}
+
+.priority-options label {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.list {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border-left: 5px solid;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.priority-low {
+  border-left-color: #4CAF50;
+}
+
+.priority-medium {
+  border-left-color: #FF9800;
+}
+
+.priority-high {
+  border-left-color: #f44336;
+}
+
+.priority-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.priority-badge.low {
+  background-color: #4CAF50;
+}
+
+.priority-badge.medium {
+  background-color: #FF9800;
+}
+
+.priority-badge.high {
+  background-color: #f44336;
+}
+
+.task-text {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.empty-message {
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,87 @@
+<div class="main">
+  <h1>To Do List</h1>
+  
+  <div class="options">
+    <p>Add New Task:</p>
+    
+    <label for="TaskText">
+      Task Description:
+      <input 
+        type="text" 
+        name="TaskText" 
+        id="TaskText"
+        [(ngModel)]="newTaskText"
+        (keyup.enter)="addTask()"
+        placeholder="Enter your task..."
+      >
+    </label>
+    
+    <br><br>
+    
+    <div class="priority-options">
+      <label>
+        <input 
+          type="radio" 
+          name="priority" 
+          value="low" 
+          [(ngModel)]="selectedPriority"
+        > Low Priority
+      </label>
+      
+      <label>
+        <input 
+          type="radio" 
+          name="priority" 
+          value="medium" 
+          [(ngModel)]="selectedPriority"
+        > Medium Priority
+      </label>
+      
+      <label>
+        <input 
+          type="radio" 
+          name="priority" 
+          value="high" 
+          [(ngModel)]="selectedPriority"
+        > High Priority
+      </label>
+    </div>
+    
+    <br>
+    
+    <button (click)="addTask()" [disabled]="!newTaskText.trim()">
+      Add Task
+    </button>
+  </div>
+
+  <div class="list">
+    <h2>Your Tasks ({{todoItems.length}})</h2>
+    
+    <div *ngIf="todoItems.length === 0" class="empty-message">
+      No tasks yet. Add one above!
+    </div>
+    
+    <div *ngFor="let item of todoItems" 
+        [class]="'todo-item ' + getPriorityClass(item.priority)"
+        [class.completed]="item.completed">
+      
+      <input 
+        type="checkbox" 
+        [checked]="item.completed"
+        (change)="toggleCompleted(item.id)"
+      >
+      
+      <span class="task-text" [class.completed-text]="item.completed">
+        {{item.text}}
+      </span>
+      
+      <span class="priority-badge {{item.priority}}">
+        {{item.priority | titlecase}}
+      </span>
+      
+      <button class="delete-btn" (click)="removeTask(item.id)">
+        x
+      </button>
+    </div>
+  </div>
+</div>
