@@ -1,8 +1,8 @@
 export interface shofer {
    id:number;
-   name:String;
-   iconUrl:String;
-   team:String;
-   category:String;
+   name:string;
+   iconUrl:string;
+   team:string;
+   category:string;
    points:number;
 }

@@ -2,11 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Vozac } from "./vozac/vozac";
 import { DRIVERS } from '../db-data';
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Vozac, NgFor],
+  imports: [RouterOutlet, Vozac, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

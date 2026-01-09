@@ -1,15 +1,6 @@
-.box {
-   display: inline-block;
-   border: 2px solid black;
-   background-color: antiquewhite;
-   padding: 10px;
-   margin: 10px;
-   border-radius: 20px;
-   width: fit-content;
-   font-size: large;
-   text-align: center;
+.begin {
+   background-color: rgb(105, 215, 105);
 }
-.box img {
-   width: 500px;
-   border-bottom: 1px solid black;
+.adv {
+   background-color: rgb(245, 184, 71);
 }
